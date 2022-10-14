@@ -164,7 +164,7 @@ def main():
                 suffix='events', return_type='file', **subquery)[0]
             inputs[sub]['regressors'] = layout.get(
                 domains='derivatives',
-                suffix='regressors',
+                suffix='timeseries',
                 return_type='file',
                 extensions=['.tsv'],
                 **subquery)[0]
